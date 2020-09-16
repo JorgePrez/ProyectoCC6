@@ -42,7 +42,7 @@
                     $query = "INSERT INTO orden VALUES ('$numeroorden','$destinatario','$direccion','$remitente',$costoorden,$numerostatus,NULL,$codigopostaldestino,'$codigotienda');";
                     $result = pg_query($conn, $query) or die('ERROR AL INSERTAR DATOS: ' . pg_last_error());
                     $tuplasaafectadas = pg_affected_rows($result);
-                    echo $tuplasaafectadas . " datos registrados correctamente.\n"; 
+              //      echo $tuplasaafectadas . " datos registrados correctamente.\n"; 
 
 
 
